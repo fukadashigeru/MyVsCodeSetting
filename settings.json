@@ -1,0 +1,139 @@
+{
+  "editor.formatOnSave": true,
+  "editor.suggest.insertMode": "replace",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {},
+  "[json]": {},
+  "editor.minimap.enabled": false,
+  // "workbench.iconTheme": "material-icon-theme",
+  "update.showReleaseNotes": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<C-h>"], "commands": [":bprevious"] },
+    { "before": ["<C-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "i"], "commands": [":vsplit"] },
+    { "before": ["leader", "-"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // VS Code settings.json
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
+
+  // markdownの時は自動フォーマットをしない
+  "leditor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "editor.renderWhitespace": "all",
+  "terminal.integrated.scrollback": 200000,
+  "editor.occurrencesHighlight": false,
+  "editor.selectionHighlight": false,
+  "vim.useSystemClipboard": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "workbench.tree.indent": 16,
+
+  // カラーの設定
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#4a4c54",// アクティブなタブの背景色
+    "tab.inactiveBackground": "#1e1e1e",// 非アクティブなタブの背景色
+    "tab.activeForeground": "#ffffff",// アクティブなタブの文字色
+    "tab.inactiveForeground": "#808080",// タブの文字色
+    "editor.lineHighlightBackground": "#303030",// カーソル行の色
+    // "editor.findMatchHighlightBackground": "#FFFF0099"
+  },
+
+  "explorer.compactFolders": false,
+  "editor.accessibilitySupport": "on",
+  "audioCues.lineHasError": "off",
+  "audioCues.volume": 0,
+  "window.zoomLevel": -1,
+  "terminal.integrated.env.linux": {
+    "MY_VARIABLE": "value"
+  },
+  "terminal.integrated.env.osx": {
+    "MY_VARIABLE": "value"
+  },
+  "terminal.integrated.env.windows": {
+    "MY_VARIABLE": "value"
+  },
+
+  //アクティブタブの色
+  // "workbench.colorCustomizations": {
+  //   "tab.activeBackground": "#282c34",
+  //   "tab.inactiveBackground": "#1e1e1e",
+  //   "tab.activeForeground": "#ffffff",
+  //   "tab.inactiveForeground": "#808080"
+  // }
+}

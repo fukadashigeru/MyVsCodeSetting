@@ -21,7 +21,7 @@
     { "before": ["<C-l>"], "commands": [":bnext"] },
 
     // splits
-    { "before": ["leader", "i"], "commands": [":vsplit"] },
+    { "before": ["leader", "0"], "commands": [":vsplit"] },
     { "before": ["leader", "-"], "commands": [":split"] },
 
     // panes
@@ -110,8 +110,18 @@
     "tab.inactiveBackground": "#1e1e1e",// 非アクティブなタブの背景色
     "tab.activeForeground": "#ffffff",// アクティブなタブの文字色
     "tab.inactiveForeground": "#808080",// タブの文字色
-    "editor.lineHighlightBackground": "#303030",// カーソル行の色
+    "editor.lineHighlightBackground": "#505050",// カーソル行の色
     // "editor.findMatchHighlightBackground": "#FFFF0099"
+    // 何の設定だろう
+    // "problemsErrorIcon.foreground": "#ff0000",
+    // "problemsWarningIcon.foreground": "#ffa500",
+    // Gitの設定
+    // "gitDecoration.modifiedResourceForeground": "#ffC040", // 変更されたファイルやディレクトリの色
+    // "gitDecoration.untrackedResourceForeground": "#ff0000", // トラックされていない新しいファイルやディレクトリの色
+    // "gitDecoration.deletedResourceForeground": "#ff0000",   // 削除されたファイルやディレクトリの色
+    // "problemsErrorIcon.foreground": "#ff0000",       // エラーアイコンの色
+    // "editorError.foreground": "#ff0000",            // エディタ内のエラーハイライトの色
+    // "editorError.border": "#ff0000"                 // エディタ内のエラーハイライトのボーダー色
   },
 
   "explorer.compactFolders": false,
@@ -128,6 +138,7 @@
   "terminal.integrated.env.windows": {
     "MY_VARIABLE": "value"
   },
+  "workbench.colorTheme": "Visual Studio Dark - C++",
 
   //アクティブタブの色
   // "workbench.colorCustomizations": {

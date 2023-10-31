@@ -115,14 +115,14 @@
   },
 
   // FindItFasterをカスタマイズ
-  {
-    "key": "shift+cmd+[",
-    "command": "find-it-faster.findFiles"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "find-it-faster.findWithinFiles"
-  },
+  // {
+  //   "key": "shift+cmd+[",
+  //   "command": "find-it-faster.findFiles"
+  // },
+  // {
+  //   "key": "shift+cmd+]",
+  //   "command": "find-it-faster.findWithinFiles"
+  // },
   {
     "key": "ctrl+shift+[",
     "command": "find-it-faster.findFiles"
@@ -163,9 +163,14 @@
 
   // ~ へ移動 
   {
-    "key": "cmd+u",
-    "command": "-cursorUndo",
-    "when": "textInputFocus"
+    "key": "cmd+k",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+m",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
   },
   {
     "key": "cmd+u",
@@ -177,14 +182,15 @@
     "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "cmd+f12",
-    "command": "-editor.action.goToImplementation",
-    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
-  },
-  {
     "key": "cmd+o",
     "command": "editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  // 無効化
+  {
+    "key": "cmd+f12",
+    "command": "-editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
     "key": "shift+f12",
@@ -192,9 +198,9 @@
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "cmd+k",
-    "command": "editor.action.revealDefinition",
-    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    "key": "cmd+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
   },
   {
     "key": "f12",
@@ -202,13 +208,13 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "cmd+l",
-    "command": "workbench.action.navigateBack",
-    "when": "canNavigateBack"
-  },
-  {
     "key": "ctrl+[Minus]",
     "command": "-workbench.action.navigateBack",
     "when": "canNavigateBack"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
   },
 ]

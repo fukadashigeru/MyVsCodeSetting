@@ -166,24 +166,7 @@
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
 
-  // ペインを移動
-  {
-    "key": "cmd+j",
-    "command": "workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "cmd+h",
-    "command": "workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "cmd+k",
-    "command": "workbench.action.focusAboveGroup"
-  },
-  {
-    "key": "cmd+l",
-    "command": "workbench.action.focusRightGroup"
-  },
-  // 現在フォーカス中のペインを移動
+  // 現在フォーカス中のペインを別のペインに移植
   {
     "key": "shift+cmd+l",
     "command": "workbench.action.moveEditorToRightGroup"
@@ -251,6 +234,7 @@
     "command": "-expandLineSelection",
     "when": "textInputFocus"
   },
+
   {
     "key": "shift+cmd+]",
     "command": "-workbench.action.nextEditor"
@@ -259,22 +243,7 @@
     "key": "shift+cmd+[",
     "command": "-workbench.action.previousEditor"
   },
-  {
-    "key": "cmd+k cmd+right",
-    "command": "-workbench.action.focusRightGroup"
-  },
-  {
-    "key": "cmd+k cmd+down",
-    "command": "-workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "cmd+k cmd+left",
-    "command": "-workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "cmd+k cmd+up",
-    "command": "-workbench.action.focusAboveGroup"
-  },
+
   {
     "key": "ctrl+cmd+right",
     "command": "-workbench.action.moveEditorToNextGroup"
@@ -283,5 +252,4 @@
     "key": "ctrl+cmd+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
   },
-
 ]

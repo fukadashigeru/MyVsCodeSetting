@@ -147,4 +147,8 @@
   //   "tab.activeForeground": "#ffffff",
   //   "tab.inactiveForeground": "#808080"
   // }
+  "go.testEnvVars": {
+    "MYSQL_DEBUG": 1,
+    "MYSQL_LOGGER_COLORFUL": 0,
+  },
 }

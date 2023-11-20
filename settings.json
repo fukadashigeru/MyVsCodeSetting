@@ -10,7 +10,6 @@
   // "workbench.iconTheme": "material-icon-theme",
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
 
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
@@ -110,7 +109,7 @@
     "tab.inactiveBackground": "#1e1e1e",// 非アクティブなタブの背景色
     "tab.activeForeground": "#ffffff",// アクティブなタブの文字色
     "tab.inactiveForeground": "#808080",// タブの文字色
-    "editor.lineHighlightBackground": "#505050",// カーソル行の色
+    "editor.lineHighlightBackground": "#000000",// カーソル行の色
     // "editor.findMatchHighlightBackground": "#FFFF0099"
     // 何の設定だろう
     // "problemsErrorIcon.foreground": "#ff0000",
@@ -122,6 +121,7 @@
     // "problemsErrorIcon.foreground": "#ff0000",       // エラーアイコンの色
     // "editorError.foreground": "#ff0000",            // エディタ内のエラーハイライトの色
     // "editorError.border": "#ff0000"                 // エディタ内のエラーハイライトのボーダー色
+    // "minimap.errorHighlight": "#ff0000", // エラーを赤色でハイライトす
   },
 
   "explorer.compactFolders": false,

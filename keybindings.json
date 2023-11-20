@@ -142,7 +142,7 @@
 
   // ~ へ移動 
   {
-    "key": "cmd+k",
+    "key": "cmd+j",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
@@ -152,13 +152,13 @@
     "when": "canNavigateBack"
   },
   {
-    "key": "cmd+u",
-    "command": "editor.action.goToTypeDefinition"
-  },
-  {
-    "key": "cmd+j",
+    "key": "cmd+h",
     "command": "editor.action.goToImplementation",
     "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+u",
+    "command": "editor.action.goToTypeDefinition"
   },
   {
     "key": "cmd+o",
